@@ -20,7 +20,6 @@ const CartScreen = ({ match, location, history }) => {
     if (productId) {
       dispatch(addToCart(productId, qty))
     }
-    return () => {}
   }, [dispatch, productId, qty])
 
   const removeFromCartHandler = (id) => {
