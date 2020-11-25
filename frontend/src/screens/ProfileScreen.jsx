@@ -36,7 +36,7 @@ const ProfileScreen = ({ location, history }) => {
         setEmail(user.email)
       }
     }
-  }, [dispatch, userInfo, user, success])
+  }, [dispatch, userInfo, user, success, history])
   const submitHandler = (e) => {
     e.preventDefault()
     if (password !== confirmPassword) {
